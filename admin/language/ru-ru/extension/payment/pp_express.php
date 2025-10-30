@@ -7,7 +7,7 @@ $_['text_extension']				 = 'Расширения';
 $_['text_success']				 	 = 'Настройки успешно изменены!';
 $_['text_edit']                      = 'Редактирование';
 $_['text_pp_express']				 = '<a href="https://www.paypal.com/uk/mrb/pal=W9TBB5DTD6QJW" taget="_blank"><img src="view/image/payment/paypal.png" alt="PayPal" title="PayPal" style="border: 1px solid #EEEEEE;" /></a>';
-$_['text_authorization']			 = 'Авторизация';
+$_['text_authorization']			 = 'Войти';
 $_['text_sale']						 = 'Продажа';
 $_['text_signup']                    = 'Зарегистрируйтесь в PayPal - сначала сохраните настройки перед обновлением';
 $_['text_sandbox']                   = 'Зарегистрируйтесь PayPal Sandbox - сначала сохраните настройки перед обновлением';

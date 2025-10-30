@@ -12,7 +12,7 @@ $_['text_checkout_express'] = 'Оформление';
 $_['text_checkout_card']	= 'Расширенная корзина';
 $_['text_production']		= 'Рабочий';
 $_['text_sandbox']			= 'Песочница';
-$_['text_authorization']	= 'Авторизация';
+$_['text_authorization']	= 'Войти';
 $_['text_sale']				= 'Продажа';
 $_['text_connect']			= 'Ваша учетная запись продавца была подключена.<br />Client ID = %s<br />Secret = %s<br />Merchant ID = %s<br />Если вы хотите подключить другой аккаунт, пожалуйста, отключитесь.';
 $_['text_currency_rub'] = 'российский рубль';

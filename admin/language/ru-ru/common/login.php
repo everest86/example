@@ -1,9 +1,9 @@
 <?php
 // Heading
-$_['heading_title']  = 'Авторизация';
+$_['heading_title']  = 'Войти';
 
 // Text
-$_['text_heading']   = 'Авторизация';
+$_['text_heading']   = 'Войти';
 $_['text_login']     = 'Введите логин и пароль';
 $_['text_forgotten'] = 'Забыли пароль?';
 
