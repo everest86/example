@@ -111,6 +111,10 @@ header {
     background-color: #0052a3;
 }
 
+#cart-btn:hover {
+    color: white;
+}
+
 .btn-outline {
     background-color: transparent;
     color: #ffffff;

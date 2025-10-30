@@ -53,14 +53,11 @@
         <button class="action-btn" id="wishlist-btn">
           <i>♥</i> Избранное
         </button>
-        <button class="action-btn" id="cart-btn">
-          <i>🛒</i> Корзина <span id="cart-count">0</span>
-        </button>
+        <a class="btn action-btn" id="cart-btn" href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i>🛒</i>{{ text_shopping_cart }}</a>
 
         <div class="auth-buttons">
           <a class="btn btn-outline" id="login-btn" href="{{ login }}">{{ text_login }}</a>
           <a class="btn btn-primary" id="register-btn" href="{{ register }}">{{ text_register }}</a>
-{#          <button class="btn btn-primary" id="register-btn">Регистрация</button>#}
         </div>
       </div>
     </div>
