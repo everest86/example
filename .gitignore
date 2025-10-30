@@ -3,4 +3,5 @@
 **.log
 system/storage/download/
 system/storage/cache/
-system/storage/session
+image/cache/
+system/storage/session/
