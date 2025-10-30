@@ -1,0 +1,5 @@
+.idea/
+.osp/
+**.log
+system/storage/download/
+system/storage/cache/
