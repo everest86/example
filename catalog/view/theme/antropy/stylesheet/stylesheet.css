@@ -86,6 +86,7 @@ header {
 
 .action-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
 }
 
 .auth-buttons {
@@ -112,6 +113,10 @@ header {
 }
 
 #cart-btn:hover {
+    color: white;
+}
+
+#wishlist-btn:hover {
     color: white;
 }
 
