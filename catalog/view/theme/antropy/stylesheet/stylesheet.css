@@ -10,8 +10,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary);
     color: var(--text);
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 /* top */
