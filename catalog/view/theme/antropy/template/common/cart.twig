@@ -15,8 +15,8 @@
                 {% endif %}
                 {% if product.recurring %} <br />
                   - <small>{{ text_recurring }} {{ product.recurring }}</small> {% endif %}</td>
-              <td class="text-left">{{ product.total }}</td>
-              <td class="text-left">{{ product.quantity }} ед.</td>
+              <td class="text-right">{{ product.total }}</td>
+              <td class="text-right">{{ product.quantity }} ед.</td>
               <td class="text-center"><button type="button" onclick="cart.remove('{{ product.cart_id }}');" title="{{ button_remove }}" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
             </tr>
           {% endfor %}

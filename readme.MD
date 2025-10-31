@@ -1,0 +1,1 @@
+mariadb -u root --port 3306 --host MySQL-8.4 --default-character-set=utf8 < C:/OSPanel/home/example.local/src/example.sql

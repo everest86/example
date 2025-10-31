@@ -9,6 +9,10 @@
     --success: #00a650;
 }
 
+body {
+    background-color: var(--primary);
+    color: var(--text);
+}
 
 /* top */
 #top {
