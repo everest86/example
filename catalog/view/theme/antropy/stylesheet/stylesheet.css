@@ -25,6 +25,24 @@
     color: #0066cc;
 }
 
+.logo:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo span:hover {
+    color: #0066cc;
+}
+
+.logo:focus-within {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo span:focus-within {
+    color: #0066cc;
+}
+
 #search {
     flex: 1;
     max-width: 500px;
@@ -91,7 +109,7 @@
     align-items: center;
 }
 
-#cart button{
+#cart button {
     background: none;
     border: none;
     color: #FFFFFF;
@@ -105,7 +123,7 @@
     transition: background-color 0.3s;
 }
 
-#cart button:hover{
+#cart button:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
 }
