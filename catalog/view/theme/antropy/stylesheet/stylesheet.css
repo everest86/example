@@ -121,7 +121,7 @@
     align-items: center;
 }
 
-#cart button {
+#goodsButton {
     background: none;
     border: none;
     color: #FFFFFF;
@@ -135,7 +135,7 @@
     transition: background-color 0.3s;
 }
 
-#cart button:hover {
+#goodsButton:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
 }
@@ -280,87 +280,124 @@ footer {
     font-size: 14px;
 }
 
-/* Cart Sidebar */
-.cart-sidebar {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    background-color: var(--secondary);
-    z-index: 1500;
-    transition: right 0.3s;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-}
-
-.cart-sidebar.open {
-    right: 0;
-}
-
-.cart-header {
-    padding: 20px;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cart-items {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.cart-item {
-    display: flex;
-    gap: 15px;
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.cart-item-image {
-    width: 80px;
-    height: 60px;
-    background: linear-gradient(135deg, #333, #555);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
+.input-group input, .input-group select, .input-group .dropdown-menu, .input-group .popover {
     font-size: 12px;
 }
-
-.cart-item-details {
-    flex: 1;
+/* Gradent to all drop down menus */
+.dropdown-menu li > a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #229ac8;
+    background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+    background-repeat: repeat-x;
+}
+#top-links .dropdown-menu a {
+    text-shadow: none;
+}
+#top-links .dropdown-menu a:hover {
+    color: #FFF;
+}
+#cart .dropdown-menu {
+    background: #2D2D2D;
+    z-index: 1001;
+    min-width: 100%;
+    overflow-y: auto;
+    max-height: 800px;
+    scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
-.cart-item-title {
-    font-size: 14px;
-    margin-bottom: 5px;
+@media (max-width: 478px) {
+    #cart .dropdown-menu {
+        width: 100%;
+    }
 }
-
-.cart-item-price {
-    font-size: 14px;
-    color: var(--accent);
-    font-weight: 600;
+#cart .dropdown-menu table {
+    margin-bottom: 10px;
+    background-color: #2D2D2D;
 }
-
-.cart-footer {
-    padding: 20px;
-    border-top: 1px solid var(--border);
+#cart .dropdown-menu li > div {
+    min-width: 427px;
+    padding: 0 10px;
 }
-
-.cart-total {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: 600;
+@media (max-width: 478px) {
+    #cart .dropdown-menu li > div {
+        min-width: 100%;
+    }
 }
-
+#cart .dropdown-menu li p {
+    margin: 20px 0;
+}
+#menu .dropdown-menu {
+    padding-bottom: 0;
+}
+@media (min-width: 768px) {
+    #menu .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    #menu {
+        border-radius: 4px;
+    }
+    #menu div.dropdown-inner > ul.list-unstyled {
+        display: block;
+    }
+    #menu div.dropdown-menu {
+        margin-left: 0 !important;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    #menu .dropdown-inner {
+        display: block;
+    }
+    #menu .dropdown-inner a {
+        width: 100%;
+        color: #fff;
+    }
+    #menu .dropdown-menu a:hover,
+    #menu .dropdown-menu ul li a:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    #menu .see-all {
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+    }
+}
+.btn-danger {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #da4f49;
+    background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+    background-repeat: repeat-x;
+    border-color: #bd362f #bd362f #802420;
+}
+.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
+    box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-xs {
+    font-size: 9px;
+    background-color: #404040;
+}
+.btn-group > .btn-xs {
+    font-size: 9px;
+    color: #404040;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #2D2D2D;
+}
 .cart-header h2{
     color: #FFFFFF;
+    padding-bottom: 17px;
+    text-align: center;
+}
+#cart td {
+    color: #FFFFFF;
+}
+
+#cart td a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
