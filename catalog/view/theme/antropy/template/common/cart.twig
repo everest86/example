@@ -41,7 +41,12 @@
               </tr>
             {% endfor %}
           </table>
-          <a class="btn btn-primary" href="{{ checkout }}"><strong>{{ text_checkout }}</strong></a>
+          <table class="table">
+                <tr>
+                    <td style="text-align: left"><a class="btn btn-primary" href="{{ checkout }}"><strong>{{ text_checkout }}</strong></a></td>
+                    <td style="text-align: right"><a class="btn btn-outline" href="{{ cart }}"><strong>{{ text_cart }}</strong></a></td>
+                </tr>
+          </table>
         </div>
       </li>
     {% else %}
