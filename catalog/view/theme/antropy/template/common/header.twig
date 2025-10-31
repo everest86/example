@@ -44,35 +44,35 @@
         <div class="header-top">
             <a href="#" class="logo">АВТО<span>ПРОШИВКИ</span></a>
 
-            <header>{{ search }} {{ cart }}</header>
+            <header>{{ search }}
+            </header>
 
-            <div class="user-actions">
-                <a class="btn action-btn" id="wishlist-btn" href="{{ wishlist }}"
-                   title="{{ text_wishlist }}"><i class="fa fa-heart"></i><span
-                            class="hidden-xs hidden-sm hidden-md">{{ text_wishlist }}</span></a>
-                <a class="btn action-btn" id="cart-btn" href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i>🛒</i>{{ text_shopping_cart }}
-                </a>
-
-                {% if logged %}
-                    <li class="dropdown"><a href="{{ account }}" title="Профиль" class="btn action-btn"
-                                            data-toggle="dropdown"><i class="fa fa-user"></i> <span
-                                    class="hidden-xs hidden-sm hidden-md">Профиль</span> <span
-                                    class="caret"></span></a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="{{ account }}">{{ text_account }}</a></li>
-                            <li><a href="{{ order }}">{{ text_order }}</a></li>
-                            <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
-                            <li><a href="{{ download }}">{{ text_download }}</a></li>
-                            <li><a href="{{ logout }}">{{ text_logout }}</a></li>
-                        </ul>
-                    </li>
-                {% else %}
-                    <div class="auth-buttons">
-                        <a class="btn btn-outline" id="login-btn" href="{{ login }}">{{ text_login }}</a>
-                        <a class="btn btn-primary" id="register-btn" href="{{ register }}">{{ text_register }}</a>
-                    </div>
-                {% endif %}
-            </div>
+                <div class="user-actions">
+                    <a class="btn action-btn" id="wishlist-btn" href="{{ wishlist }}"
+                       title="{{ text_wishlist }}"><i class="fa fa-heart"></i><span
+                                class="hidden-xs hidden-sm hidden-md">{{ text_wishlist }}</span></a>
+                    {#                <a class="btn action-btn" id="cart-btn" href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i>🛒</i>{{ text_shopping_cart }}</a> #}
+                    {{ cart }}
+                    {% if logged %}
+                        <li class="dropdown"><a href="{{ account }}" title="Профиль" class="btn action-btn"
+                                                data-toggle="dropdown"><i class="fa fa-user"></i> <span
+                                        class="hidden-xs hidden-sm hidden-md">Профиль</span> <span
+                                        class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="{{ account }}">{{ text_account }}</a></li>
+                                <li><a href="{{ order }}">{{ text_order }}</a></li>
+                                <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
+                                <li><a href="{{ download }}">{{ text_download }}</a></li>
+                                <li><a href="{{ logout }}">{{ text_logout }}</a></li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <div class="auth-buttons">
+                            <a class="btn btn-outline" id="login-btn" href="{{ login }}">{{ text_login }}</a>
+                            <a class="btn btn-primary" id="register-btn" href="{{ register }}">{{ text_register }}</a>
+                        </div>
+                    {% endif %}
+                </div>
         </div>
         {#    <div id="top-links" class="nav pull-right"> #}
         {#      <ul class="list-inline"> #}
