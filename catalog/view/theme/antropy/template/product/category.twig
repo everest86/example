@@ -48,9 +48,8 @@
                                         <div class="product-price">Цена: {{ product.price }} ₽</div>
                                     </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-outline add-to-wishlist" data-id="1">В избранное</button>
-                                        <button onclick="wishlist.add('{{ product.product_id }}');"
-                                                onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"
+                                        <button onclick="wishlist.add('{{ product.product_id }}');" class="btn btn-outline add-to-wishlist" data-id="1">В избранное</button>
+                                        <button onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"
                                                 class="btn btn-primary add-to-cart" data-id="1">В корзину
                                         </button>
                                     </div>
