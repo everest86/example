@@ -25,25 +25,7 @@
                     {% endif %}</div>
                 <hr>
             {% endif %}
-            {% if categories %}
-                <h3>{{ text_refine }}</h3><br>
-                <div class="row">{% for category in categories|batch((categories|length / 4)|round(1, 'ceil')) %}
-                        <div class="col-sm-3">
-                            <ul>
-                                {% for child in category %}
-                                    <a title="{{ child.name }}" href="{{ child.href }}">
-                                        <div class="category-card">
-                                            <div class="category-info">
-                                                {{ child.name }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    {% endfor %}</div>
-                <br/>
-            {% endif %}
+
             {% if products %}
                 <div class="row">
                     <div class="col-md-2 col-sm-6 hidden-xs hidden-element">
@@ -81,6 +63,29 @@
                     <div class="col-sm-6 text-right">{{ results }}</div>
                 </div>
             {% endif %}
+
+            {% if categories %}
+                {% if products %}
+                    <h3>Дополнительные категории</h3><br>
+                {% endif %}
+                <div class="row">{% for category in categories|batch((categories|length / 4)|round(1, 'ceil')) %}
+                        <div class="col-sm-3">
+                            <ul>
+                                {% for child in category %}
+                                    <a title="{{ child.name }}" href="{{ child.href }}">
+                                        <div class="category-card">
+                                            <div class="category-info">
+                                                {{ child.name }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}</div>
+                <br/>
+            {% endif %}
+
             {% if not categories and not products %}
                 <p>{{ text_empty }}</p>
                 <div class="buttons">
