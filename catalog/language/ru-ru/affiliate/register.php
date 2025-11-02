@@ -34,7 +34,7 @@ $_['entry_bank_swift_code']     = 'БИК';
 $_['entry_bank_account_name']   = 'Корр. счет';
 $_['entry_bank_account_number'] = 'Расчетный счет';
 $_['entry_password']            = 'Пароль';
-$_['entry_confirm']             = 'Подтверждение пароля';
+$_['entry_confirm']             = 'Проверка пароля';
 
 // Error
 $_['error_exists']              = 'Данный E-Mail уже зарегистрирован!';

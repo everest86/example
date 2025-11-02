@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']   = 'Забыли пароль?';
+$_['heading_title']   = 'Восстановить пароль?';
 
 // Text
 $_['text_account']    = 'Личный Кабинет';

@@ -19,7 +19,7 @@ $_['entry_email']          = 'E-Mail';
 $_['entry_telephone']      = 'Телефон';
 $_['entry_newsletter']     = 'Подписка на новости';
 $_['entry_password']       = 'Пароль';
-$_['entry_confirm']        = 'Подтверждение пароля';
+$_['entry_confirm']        = 'Проверка пароля';
 
 // Error
 $_['error_exists']         = 'Данный E-Mail уже зарегистрирован!';
