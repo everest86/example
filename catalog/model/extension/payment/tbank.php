@@ -104,11 +104,11 @@ class ModelExtensionPaymentTBank extends Model
         $amount = round($order['total'] * 100);
         $receiptItems = [];
         $products = $this->cart->getProducts();
-        $session = $this->cart->session->data;
+        $session = $this->session->data;
 
         foreach ($products as $product) {
             $vat = $this->getVat($product['price'], $product['tax_class_id']);
-            $price = round($this->cart->tax->calculate($product['price'], $product['tax_class_id'], true) * 100);
+            $price = round($this->tax->calculate($product['price'], $product['tax_class_id'], true) * 100);
 
             $item = array(
                 'Name' => mb_substr($product['name'], 0, 64),
@@ -129,7 +129,8 @@ class ModelExtensionPaymentTBank extends Model
         $shipping = false;
         if ($this->hasShipping()) {
             $vat = $this->getVat($session['shipping_method']['cost'], $session['shipping_method']['tax_class_id']);
-            $price = round($this->cart->tax->calculate($session['shipping_method']['cost'], $session['shipping_method']['tax_class_id'], true) * 100);
+            $price = round($this->tax->calculate($session['shipping_method']['cost'], $session['shipping_method']['tax_class_id'], true) * 100);
+
 
             if ($price) {
                 $shipping = true;
@@ -153,8 +154,8 @@ class ModelExtensionPaymentTBank extends Model
 
     public function hasShipping()
     {
-        return isset($this->cart->session->data['shipping_method']['cost']) &&
-            $this->cart->session->data['shipping_method']['cost'];
+        return isset($this->session->data['shipping_method']['cost']) &&
+            $this->session->data['shipping_method']['cost'];
     }
 
     public function getVat($price, $taxClassId)
