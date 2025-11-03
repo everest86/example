@@ -587,3 +587,7 @@ footer {
 #content > ul > li > a{
     color: #FFFFFF;
 }
+
+.table-responsive a {
+    color: #FFFFFF;
+}
