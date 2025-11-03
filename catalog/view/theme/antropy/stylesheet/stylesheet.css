@@ -583,3 +583,7 @@ footer {
 .panel {
     background-color: var(--secondary);
 }
+
+#content > ul > li > a{
+    color: #FFFFFF;
+}
