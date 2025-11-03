@@ -17,9 +17,9 @@ $_['text_agree']     = 'Я прочитал <a href="%s" class="agree"><b>%s</b>
 $_['button_submit']  = 'Отправить сообщение';
 
 // Entry
-$_['entry_name']     = 'Ваше имя';
-$_['entry_email']    = 'Ваш E-Mail';
-$_['entry_enquiry']  = 'Ваш вопрос или сообщение';
+$_['entry_name']     = 'Имя';
+$_['entry_email']    = 'E-Mail';
+$_['entry_enquiry']  = 'Сообщение';
 
 // Email
 $_['email_subject']  = 'Сообщение от %s';
