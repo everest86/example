@@ -2890,7 +2890,6 @@ legend {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: inherit;
-    color: #333;
     border: 0;
     border-bottom: 1px solid #e5e5e5
 }
@@ -2954,8 +2953,8 @@ output {
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
+    color: #FFFFFF;
+    background-color: #1a1a1a;
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -2970,7 +2969,7 @@ output {
 }
 
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: #FFFFFF;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
