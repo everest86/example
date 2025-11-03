@@ -26,7 +26,7 @@ class ControllerProductSearch extends Controller {
 		if (isset($this->request->get['description'])) {
 			$description = $this->request->get['description'];
 		} else {
-			$description = '';
+			$description = true;
 		}
 
 		if (isset($this->request->get['category_id'])) {
