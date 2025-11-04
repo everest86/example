@@ -48,30 +48,11 @@ class ControllerAccountDownload extends Controller {
 			if (file_exists(DIR_DOWNLOAD . $result['filename'])) {
 				$size = filesize(DIR_DOWNLOAD . $result['filename']);
 
-				$i = 0;
-
-				$suffix = array(
-					'B',
-					'KB',
-					'MB',
-					'GB',
-					'TB',
-					'PB',
-					'EB',
-					'ZB',
-					'YB'
-				);
-
-				while (($size / 1024) > 1) {
-					$size = $size / 1024;
-					$i++;
-				}
-
 				$data['downloads'][] = array(
 					'order_id'   => $result['order_id'],
 					'date_added' => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
 					'name'       => $result['name'],
-					'size'       => round(substr($size, 0, strpos($size, '.') + 4), 2) . $suffix[$i],
+					'size'       => $size / 1024 . ' Kb',
 					'href'       => $this->url->link('account/download/download', 'download_id=' . $result['download_id'], true)
 				);
 			}
