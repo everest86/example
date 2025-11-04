@@ -45,7 +45,9 @@
                                 </div>
                                 <div class="product-info">
                                     <div class="product-meta">
-                                        <div class="product-price">Цена: {{ product.price }}</div>
+                                        <div class="product-price">
+                                            <p style="border-top: none">Размер: {{ product.rating }}</p>
+                                            Цена: {{ product.price }}</div>
                                     </div>
                                     <div class="product-actions">
                                         <button onclick="wishlist.add('{{ product.product_id }}');" class="btn btn-outline add-to-wishlist" data-id="1">В избранное</button>
