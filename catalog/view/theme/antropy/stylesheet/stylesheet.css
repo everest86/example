@@ -647,3 +647,7 @@ footer {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.pull-right {
+    margin-bottom: 40px;
+}
