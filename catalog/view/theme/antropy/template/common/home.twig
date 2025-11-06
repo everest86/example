@@ -1,15 +1,24 @@
 {{ header }}
-<h1></h1>
+<section id="hero">
+    <div id="container-main">
+        <div id="hero-content">
+            <h1 id="h1text1">Профессиональные решения для <span>оптимизации ЭБУ</span></h1>
+            <p class="ptext1">Эксклюзивный доступ к комплексной базе автомобильных прошивок. Мы предлагаем уникальную
+                цифровую экосистему — крупнейшую в своем роде базу автомобильных прошивок.</p>
+            <a href="index.php?route=product/category&path=1001" class="btn btn-primary">Исследовать решения</a>
+        </div>
+    </div>
+</section>
 <div id="common-home" class="container">
-  <div class="row">{{ column_left }}
-    {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
-    {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
-    {% else %}
-    {% set class = 'col-sm-12' %}
-    {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
-    {{ column_right }}</div>
+    <div class="row">{{ column_left }}
+        {% if column_left and column_right %}
+            {% set class = 'col-sm-6' %}
+        {% elseif column_left or column_right %}
+            {% set class = 'col-sm-9' %}
+        {% else %}
+            {% set class = 'col-sm-12' %}
+        {% endif %}
+        <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
+        {{ column_right }}</div>
 </div>
 <br><br><br>{{ footer }}
