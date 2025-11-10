@@ -1,9 +1,15 @@
 {{ header }}
 <div id="product-product" class="container">
     <ul class="breadcrumb">
-        {% for breadcrumb in breadcrumbs %}
-            <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
-        {% endfor %}
+        {% if breadcrumbs|length > 3 %}
+            {% for breadcrumb in breadcrumbs %}
+                <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+            {% endfor %}
+        {% else %}
+            <li><a href="index.php?route=common/home"><i class="fa fa-home"></i></a></li>
+            <li><a href="{{ breadcrumbs[1].href }}">{{ breadcrumbs[1].text }}</a></li>
+            <li><a href="{{ breadcrumbs|last.href }}">{{ description }}</a></li>
+        {% endif %}
     </ul>
     <div class="row">{{ column_left }}
         {% if column_left and column_right %}
