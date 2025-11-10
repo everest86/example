@@ -83,28 +83,28 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="product-layout product-list col-xs-12">
-                            <a href="{{ product.href }}">
-                                <div class="product-thumb">
-                                    <div class="product-image" title="{{ product.description }}">
-                                        {{ product.name }}
-                                    </div>
-                                    <div class="product-info">
-                                        <div class="product-meta">
-                                            <div class="product-price">
-                                                <p style="border-top: none">Размер: {{ product.size }} Kb</p>
-                                                Цена: {{ product.price }}</div>
-                                        </div>
-                                        <div class="product-actions">
-                                            <button onclick="wishlist.add('{{ product.product_id }}');"
-                                                    class="btn btn-outline add-to-wishlist" data-id="1">В избранное
-                                            </button>
-                                            <button onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"
-                                                    class="btn btn-primary add-to-cart" data-id="1">В корзину
-                                            </button>
+                            <div class="product-thumb">
+                                <a href="{{ product.href }}">
+                                    <div class="product-card">
+                                        <div class="product-info" title="{{ product.description }}">
+                                            {{ product.name }}
                                         </div>
                                     </div>
+                                </a>
+                                <div class="product-meta">
+                                    <div class="product-price">
+                                        <p style="border-top: none">Размер: {{ product.size }} Kb</p>
+                                        Цена: {{ product.price }}</div>
                                 </div>
-                            </a>
+                                <div class="product-actions">
+                                    <button onclick="wishlist.add('{{ product.product_id }}');"
+                                            class="btn btn-outline add-to-wishlist" data-id="1">В избранное
+                                    </button>
+                                    <button onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"
+                                            class="btn btn-primary add-to-cart" data-id="1">В корзину
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>

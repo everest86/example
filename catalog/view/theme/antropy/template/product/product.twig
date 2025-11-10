@@ -33,19 +33,17 @@
             {% endif %}
             <div class="{{ class }}">
                 <div id="product" class="product-layout product-list col-xs-12">
-                    <div class="product-thumb form-group">
-                        <div title="{{ heading_title }}" class="product-image">
-                            <h1>{{ heading_title }}</h1>
-                        </div>
-                        <input type="text" name="quantity" value="1" size="2" id="input-quantity"
-                               class="form-control" style="display: none"/>
-                        <input type="hidden" name="product_id" value="{{ product_id }}"/>
-                        <div class="product-info">
-                            <div class="product-meta">
-                                <div class="product-price">
-                                    <p style="border-top: none">Размер: {{ size }} Kb</p>
-                                    Цена: {{ price }}</div>
+                    <div class="product-thumb">
+                        <div class="product-card">
+                            <div class="product-info" title="{{ heading_title }}">
+                                {{ heading_title }}
                             </div>
+                        </div>
+                        <input type="hidden" name="product_id" value="{{ product_id }}"/>
+                        <div class="product-meta">
+                            <div class="product-price">
+                                <p style="border-top: none">Размер: {{ size }} Kb</p>
+                                Цена: {{ price }}</div>
                         </div>
                         <button type="button" id="button-cart" data-loading-text="{{ text_loading }}"
                                 class="btn btn-primary btn-lg btn-block">В корзину
