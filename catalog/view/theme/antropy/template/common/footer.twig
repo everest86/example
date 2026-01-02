@@ -1,6 +1,6 @@
-{#<footer class="footer">#}
-{#  <div class="container">#}
-{#    <div class="row">#}
+<footer class="footer">
+  <div class="container">
+    <div class="row">
 {#      {% if informations %}#}
 {#      <div class="col-sm-3">#}
 {#        <h4>{{ text_information }}</h4>#}
@@ -11,14 +11,14 @@
 {#        </ul>#}
 {#      </div>#}
 {#      {% endif %}#}
-{#      <div class="col-sm-3">#}
+      <div class="col-sm-3">
 {#        <h5>{{ text_service }}</h5>#}
-{#        <ul class="list-unstyled">#}
-{#          <li><a href="{{ contact }}">{{ text_contact }}</a></li>#}
+        <ul class="list-unstyled">
+          <li><a href="{{ contact }}">Форма обратной связи</a></li>
 {#          <li><a href="{{ return }}">{{ text_return }}</a></li>#}
 {#          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>#}
-{#        </ul>#}
-{#      </div>#}
+        </ul>
+      </div>
 {#      <div class="col-sm-3">#}
 {#        <h5>{{ text_extra }}</h5>#}
 {#        <ul class="list-unstyled">#}
@@ -45,18 +45,18 @@
 {#          <li>Пн-Пт: 9:00-18:00</li>#}
 {#        </ul>#}
 {#      </div>#}
-{#    </div>#}
+    </div>
 {#    <p>{{ powered }}. Все права защищены.</p>#}
-{#  </div>#}
-{#</footer>#}
-{#{% for style in styles %}#}
-{#<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />#}
-{#{% endfor %}#}
-{#{% for script in scripts %}#}
-{#<script src="{{ script }}" type="text/javascript"></script>#}
-{#{% endfor %}#}
-{#<!--#}
-{#OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.#}
-{#Please donate via PayPal to donate@opencart.com#}
-{#//-->#}
-{#</body></html>#}
+  </div>
+</footer>
+{% for style in styles %}
+<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+{% endfor %}
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</body></html>
