@@ -80,13 +80,13 @@ body {
 
 #search {
     flex: 1;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 20px;
     position: relative;
 }
 
 #search input {
-    width: 300px;
+    width: 800px;
     padding: 10px 15px;
     background-color: #1a1a1a;
     border: 1px solid #404040;

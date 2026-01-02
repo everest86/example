@@ -43,11 +43,13 @@
                         <div class="product-meta">
                             <div class="product-price">
                                 <p style="border-top: none">Размер: {{ size }} Kb</p>
-                                Цена: {{ price }}</div>
+{#                                Цена: {{ price }}#}
+                            </div>
                         </div>
-                        <button type="button" id="button-cart" data-loading-text="{{ text_loading }}"
-                                class="btn btn-primary btn-lg btn-block">В корзину
-                        </button>
+{#                        <button type="button" id="button-cart" data-loading-text="{{ text_loading }}"#}
+{#                                class="btn btn-primary btn-lg btn-block">В корзину#}
+{#                        </button>#}
+                        <a href="index.php?route=account/download/download&download_id={{ download_id }}" class="btn btn-primary btn-lg btn-block" data-id="1">Скачать</a>
                     </div>
                 </div>
             </div>
